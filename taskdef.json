@@ -5,7 +5,7 @@
   "containerDefinitions": [
     {
       "name": "app",
-      "image": "285951302175.dkr.ecr.us-east-1.amazonaws.com/ecomiq-backend:latest",
+      "image": "285951302175.dkr.ecr.us-east-1.amazonaws.com/economiq-backend:latest",
       "portMappings": [
         {
           "containerPort": 80,
