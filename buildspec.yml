@@ -8,11 +8,11 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - docker build -t ecomiq-backend .
+      - docker build -t economiq-backend .
       - docker tag ecomiq-backend:latest 285951302175.dkr.ecr.us-east-1.amazonaws.com/economiq-backend:latest
   post_build:
     commands:
-      - docker push 285951302175.dkr.ecr.us-east-1.amazonaws.com/ecomiq-backend:latest
+      - docker push 285951302175.dkr.ecr.us-east-1.amazonaws.com/economiq-backend:latest
       - printf '{"ImageURI":"%s"}' 285951302175.dkr.ecr.us-east-1.amazonaws.com/economiq-backend:latest > imageDetail.json
 
 artifacts:
