@@ -9,7 +9,7 @@ phases:
     commands:
       - echo Build started on `date`
       - docker build -t economiq-backend .
-      - docker tag ecomiq-backend:latest 285951302175.dkr.ecr.us-east-1.amazonaws.com/economiq-backend:latest
+      - docker tag economiq-backend:latest 285951302175.dkr.ecr.us-east-1.amazonaws.com/economiq-backend:latest
   post_build:
     commands:
       - docker push 285951302175.dkr.ecr.us-east-1.amazonaws.com/economiq-backend:latest

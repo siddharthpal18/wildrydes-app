@@ -1,5 +1,5 @@
 {
-  "family": "ecomiq-task",
+  "family": "economiq-task",
   "executionRoleArn": "arn:aws:iam::285951302175:role/ecsTaskExecutionRole",
   "networkMode": "awsvpc",
   "containerDefinitions": [
